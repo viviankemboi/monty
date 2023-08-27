@@ -7,12 +7,12 @@ int get_word_count(char *str, char *delims);
 char *get_next_word(char *str, char *delims);
 
 /**
- * strtow - take a string and seperate its words
+ * strtow - takes a string and seperates its words
  *
  * @str: string to seperate into words
- * @delims: delimitor to use to delimit words
+ * @delims: delimitors to use to delimit words
  *
- * Return: 2D array of pointer to each word
+ * Return: 2D array of pointers to each word
  */
 
 char **strtow(char *str, char *delims)
@@ -63,7 +63,7 @@ char **strtow(char *str, char *delims)
 }
 
 /**
- * is_delim - checks if the  stream has delimitor char
+ * is_delim - checks if stream has delimitor char
  *
  * @ch: character in stream
  *

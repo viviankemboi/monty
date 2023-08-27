@@ -8,7 +8,7 @@ void (*get_op_func(char *opcode))(stack_t**, unsigned int);
 int run_monty(FILE *script_fd);
 
 /**
- * free_token - Free the global op_toks array of string.
+ * free_tokens - Frees the global op_toks array of strings.
  */
 void free_tokens(void)
 {
@@ -24,7 +24,7 @@ void free_tokens(void)
 }
 
 /**
- * token_arr_len - Get the length of current op_tok.
+ * token_arr_len - Gets the length of current op_toks.
  *
  * Return: Length of current op_toks (as int).
  */
@@ -38,11 +38,11 @@ unsigned int token_arr_len(void)
 }
 
 /**
- * is_empty_line - Check if a line read from getline only contain delimiter.
+ * is_empty_line - Checks if a line read from getline only contains delimiters.
  * @line: A pointer to the line.
- * @delims: A string of delimiter character.
+ * @delims: A string of delimiter characters.
  *
- * Return: If the line only contain delimiter - 1.
+ * Return: If the line only contains delimiters - 1.
  *         Otherwise - 0.
  */
 int is_empty_line(char *line, char *delims)
@@ -64,10 +64,10 @@ int is_empty_line(char *line, char *delims)
 }
 
 /**
- * get_op_func - Matche an opcode with its corresponding function.
+ * get_op_func - Matches an opcode with its corresponding function.
  * @opcode: The opcode to match.
  *
- * Return: the pointer to the corresponding function.
+ * Return: A pointer to the corresponding function.
  */
 void (*get_op_func(char *opcode))(stack_t**, unsigned int)
 {
